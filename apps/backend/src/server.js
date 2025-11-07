@@ -8,7 +8,7 @@ const PORT = process.env.SERVER_PORT;
 app.use(express.json());
 
 app.get("/",(req,res) => {
-    return res.status(200).send("Backend Running")
+    return res.status(200).send("<h1>Backend Running</h1>")
 })
 
 app.use("/users",async (req,res) => {
